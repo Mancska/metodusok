@@ -14,7 +14,13 @@ public class JavaApplication5 {
         osszeg =osszead(osszeg, 3);
         osszeg =osszead(osszeg, 4);
         kiir("1+2+3+4="+osszeg+"\n");
-        osszeg=3+4+2;
+        int a = 3, b=4,c=2; 
+        osszeg=osszead(a, b);
+        osszeg=osszead(osszeg, c);
+        String s ="%d+%d+%d gyöke:".formatted(a,b,c);
+        double gyok = Math.sqrt(osszeg);
+        kimenet = String.format("%s %.4f\n",s, gyok);
+        kiir(kimenet);
     }
     public static int elso10() {
       int osszeg = 0;
